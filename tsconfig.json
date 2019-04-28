@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "allowJs": true,
+        "forceConsistentCasingInFileNames": true,
+        "alwaysStrict": true,
+        "checkJs": true,
+        "resolveJsonModule": true,
+        "lib": ["es2015", "dom", "es2018"]
+    },
+    "files": [
+        "PoliticsAndWar.ts"
+    ]
+}
