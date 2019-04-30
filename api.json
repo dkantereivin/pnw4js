@@ -4,7 +4,7 @@
         "type": "gen",
         "name": "All Cities",
         "path": "/all-cities/key=${[KEY]}"
-    },
+    }, 
     "alliance": {
         "type": "id",
         "name": "Alliance",
@@ -48,7 +48,7 @@
     "nations": {
         "type": "params",
         "name": "All Nations",
-        "path": "/nations/?${[PARAMS]}&key={[KEY]}"
+        "path": "/nations/?${[PARAMS]}key=${[KEY]}"
     },
     "trade_history": {
         "type": "params",
@@ -58,7 +58,7 @@
     "trade_price": {
         "type": "id",
         "name": "Trade Price",
-        "path": "/tradeprice/resource=${[ID]}",
+        "path": "/tradeprice/resource=${[ID]}&key=${[KEY]}",
         "--comment--": "${[ID]} is actually the resource name"
     },
     "war": {
