@@ -106,8 +106,8 @@ class PoliticsAndWar
             });
         
         let {data} = res;
-
-        if (!data.success)
+        
+        if ((!data.success) && data.hasOwnProperty("success"))
         {
             let rejectMessage: string = data.general_message;
             return Promise.reject(rejectMessage);       
@@ -118,3 +118,4 @@ class PoliticsAndWar
 }
 //
 export default PoliticsAndWar;
+module.exports = PoliticsAndWar;
