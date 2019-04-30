@@ -39,15 +39,23 @@ let nationCall = await pnw.nation(64060);
 ```
 This library is compatible with TypeScript. Please see Documentation for in-depth documentation. The `PoliticsAndWar(key, [pass])` constructor requires a string parameter for the key, and the default password is `pnw`. The password is `readonly`, however `key` can be updated using the `setKey(key)` method.
 
-## Documentation
+## Documentation & Support
+In order to promote ease of use and accessibility, this library is straightforward *and* documented on Github Pages written and generated using [TSDoc](https://github.com/Microsoft/tsdoc). 
 
+Please [click here](https://canterbotto.github.io/pnw4js/) to view generated documentation. Alternatively, just read through source code, type annotations and inline documentation.
+
+### Support
+This library is actively supported and developed by the creator. Feel free to post an issue on the page, or contact me on Discord @Canter#0548 (send a friend request). You can also join the [my Discord](https://discord.gg/7YzKp3G) and ping me.
 
 ## Testing & Updates
+This library has been tested and deployed in NodeJS and browser environments. That being said, there likely exist undiscovered bugs. Please submit an issue request if you encounter any problems using the library.
+
+This is current **Version 1** of pnw4js. Version 2 *is planned to* include caching of past calls, and Version 3 will include analysis and filters on calls (TBD). Code written for current updates will still work for future versions of the library.
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+As an open-source project, any pull requests are welcome! If you implement the library and create any major features, please feel free to send me a message if you're unsure on how to implement them into the library. 
 
-Please make sure to update tests as appropriate.
+**Pull requests are welcome**. Please include a description of each commit, and keep your contributions atomic - one major feature per pull request please!
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
