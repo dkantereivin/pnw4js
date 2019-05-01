@@ -2,6 +2,15 @@
 
 [pnw4js](https://github.com/canterbotto/pnw4js) is a simple, type safe, promise-based JavaScript library for accessing the [Politics & War](http://politicsandwar.com/) API. It is written in TypeScript for CommonJS, NodeJS and TypeScript. Compiles to ES5.
 
+### Features
+Why use pnw4js?
+- Extremely Simple To Install, Setup and Use
+- Clear, Extensive Documentation
+- Constant Support
+- Async, promise-based
+- Type Safe
+- Only JavaScript library for PnW
+
 ## Installation
 
 The easiest way to install pnw4js is using [npm](https://www.npmjs.com/package/pnw4js) in your project directory.
