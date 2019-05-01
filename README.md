@@ -4,7 +4,7 @@
 
 ## Installation
 
-The easiest way to install pnw4js is using [npm](https://www.npmjs.com/) in your project directory.
+The easiest way to install pnw4js is using [npm](https://www.npmjs.com/package/pnw4js) in your project directory.
 
 ```bash
 cd project_dir
