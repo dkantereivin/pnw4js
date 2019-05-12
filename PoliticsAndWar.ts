@@ -64,7 +64,6 @@ class PoliticsAndWar
         if (raw_api[name].type !== "gen") 
             link = this.url[name].replace("${[ID]}", id)
                                  .replace("${[PARAMS]}", id);
-            console.log(link);
         return link;
     }
 
