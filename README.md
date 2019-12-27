@@ -39,7 +39,7 @@ let pnw = new PoliticsAndWar("key", "password");
 
 let nationCall = await pnw.nation(64060); // test call
 ```
-##### CommonJS:
+##### CommonJS/TypeScript:
 ```js
 import PoliticsAndWar from "pnw4js";
 let pnw = new PoliticsAndWar("key", "password");
