@@ -33,6 +33,8 @@ class PoliticsAndWar
     public tradeHistory: Function = Functions.tradeHistory;
     public tradePrice: Function = Functions.tradePrice;
     public war: Function = Functions.war;
+    public wars: Function = Functions.wars;
+    public warAttacks: Function = Functions.warAttacks;
 
     /**
      * @public @constructor

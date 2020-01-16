@@ -98,6 +98,49 @@ async function war (this: PoliticsAndWar, id: number | string): Promise<any>
     return await this.rawApiCall("war", <string> id);
 }
 
+async function wars (this: PoliticsAndWar, number: number, allianceids: string): Promise<any>
+{
+    
+    let params: string = "";
+
+    if(number > 0) {
+        params += number;
+    }
+
+    if(allianceids.length > 0) {
+        
+        if(!number) {
+            params += "?";
+        }
+        else {
+            params += "&";
+        }
+
+        params += allianceids;
+    }
+
+    return await this.rawApiCall("wars", params);
+}
+
+async function warAttacks (this: PoliticsAndWar, minwarid: number, maxwarid: number, warid: number): Promise<any>
+{
+    let params: string = "";
+    
+    if(minwarid > 0) {
+        params += "&min_war_attack_id=" + minwarid;
+    }
+
+    if(maxwarid > 0) {
+        params += "&max_war_attack_id=" + maxwarid;
+    }
+
+    if(warid > 0) {
+        params += "&war_id=" + warid;
+    }
+
+    return await this.rawApiCall("warattacks", params);
+}
+
 //
 export 
 {
@@ -113,5 +156,7 @@ export
     nations,
     tradeHistory,
     tradePrice,
-    war
+    war,
+    wars,
+    warAttacks
 }
