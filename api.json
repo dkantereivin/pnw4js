@@ -65,5 +65,15 @@
         "type": "id",
         "name": "War",
         "path": "https://politicsandwar.com/api/war/${[ID]}&key=${[KEY]}"
+    },
+    "wars": {
+        "type": "id",
+        "name": "Wars",
+        "path": "/wars/${[PARAMS]}&key=${[KEY]}"
+    },
+    "warattacks": {
+        "type": "params",
+        "name": "War Attacks",
+        "path": "/war-attacks/key=${[KEY]}${[PARAMS]}"
     }
 }
