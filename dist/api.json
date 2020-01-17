@@ -1,0 +1,79 @@
+{
+    "base_url": "http://politicsandwar.com/api",
+    "all_cities": {
+        "type": "gen",
+        "name": "All Cities",
+        "path": "/all-cities/key=${[KEY]}"
+    },
+    "alliance": {
+        "type": "id",
+        "name": "Alliance",
+        "path": "/alliance/id=${[ID]}&key=${[KEY]}"
+    },
+    "alliance_members": {
+        "type": "id",
+        "name": "Alliance Members",
+        "path": "/alliance-members/?allianceid=${[ID]}&key=${[KEY]}"
+    },
+    "alliances": {
+        "type": "gen",
+        "name": "Alliances",
+        "path": "/alliances/?key=${[KEY]}"
+    },
+    "applicants": {
+        "type": "id",
+        "name": "Applicants",
+        "path": "/applicants/?allianceid=${[ID]}&key=${[key]}"
+    },
+    "bank": {
+        "type": "id",
+        "name": "Bank",
+        "path": "/alliance-bank/?allianceid=${[ID]}&key=${[KEY]}"
+    },
+    "city": {
+        "type": "id",
+        "name": "City",
+        "path": "/city/id=${[ID]}&key=${[KEY]}"
+    },
+    "nation": {
+        "type": "id",
+        "name": "Nation",
+        "path": "/nation/id=${[ID]}&key=${[KEY]}"
+    },
+    "nations_military": {
+        "type": "gen",
+        "name": "Nation Military",
+        "path": "/nation-military/key=${[KEY]}"
+    },
+    "nations": {
+        "type": "params",
+        "name": "All Nations",
+        "path": "/nations/?${[PARAMS]}key=${[KEY]}"
+    },
+    "trade_history": {
+        "type": "params",
+        "name": "Trade History",
+        "path": "/trade-history/key=${[KEY]}${[PARAMS]}"
+    },
+    "trade_price": {
+        "type": "id",
+        "name": "Trade Price",
+        "path": "/tradeprice/resource=${[ID]}&key=${[KEY]}",
+        "--comment--": "${[ID]} is actually the resource name"
+    },
+    "war": {
+        "type": "id",
+        "name": "War",
+        "path": "https://politicsandwar.com/api/war/${[ID]}&key=${[KEY]}"
+    },
+    "wars": {
+        "type": "id",
+        "name": "Wars",
+        "path": "/wars/${[PARAMS]}&key=${[KEY]}"
+    },
+    "warattacks": {
+        "type": "params",
+        "name": "War Attacks",
+        "path": "/war-attacks/key=${[KEY]}${[PARAMS]}"
+    }
+}
