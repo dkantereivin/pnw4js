@@ -20,15 +20,15 @@ cd project_dir
 npm install pnw4js
 ```
 
-For greater flexibility — such as the ability to edit the code or manually configure the APIs — you are able to manually clone the project from the github. In your project directory, you will want to clone in the files 
+For greater flexibility — such as the ability to edit the code or manually configure the APIs — you are able to manually clone the project from the github. In your project directory, you will want to clone the Git repository. **Note that you can still make changes to an `npm` installation of `pnw4js`**, at the risk of it being lost in an update.
 ```bash
 cd project_dir
-git clone # Project from Github
+git clone https://github.com/dkantereivin/pnw4js # Project from Github
 npm install # Installs all dependencies
 npm install typescript # for compiling github project
 tsc
 ```
-You will then see a `dist` folder which contains .js files. Copy the entire contents of the folder into your project folder. To edit the files, you must perform any edits in `.ts` source files and then recompile using `tsc`.
+You will then see a `dist` folder which contains .js files. Copy the entire contents of the folder into your project folder. To edit the files, you should perform any edits in `.ts` source files and then recompile using `tsc`.
 
 ## Usage
 For standard installation using npm, the following code outlines usage. 
@@ -59,7 +59,24 @@ This library is actively supported and developed by the creator. Feel free to po
 ## Testing & Updates
 This library has been tested and deployed in NodeJS and browser environments. That being said, there likely exist undiscovered bugs. Please submit an issue request if you encounter any problems using the library.
 
-This is current **Version 1** of pnw4js. Version 2 *is planned to* include caching of past calls, and Version 3 will include analysis and filters on calls (TBD). Code written for current updates will still work for future versions of the library.
+This is current **Version 1** of pnw4js. Future versions are likely to include:
+- addition of POST functions (i.e. send message, send alliance bank resources/money); approved by Alex
+- caching of recent calls; either based on expiry time, cache memory size, or number of cached records
+- support for the game's APIv2, when it is released
+- creating an exposed "raw" api function, and a function to call an api by string (for convenience)
+- filtering of API calls on top of those provided by the API, and analysis of results
+- compatability with Google Sheets using Babel and clasp (unlikely, if you want this, please contact me)
+- Wiki and better documentation (on Github)
+
+Any code written using current project versions will continue to be supported in future versions.
+
+#### New in v1.0.6
+- added missing `wars` and `warAttacks` api, contributed by [luketp](https://github.com/luketp)
+- updated README: corrected future plans and installation instructions
+- distribution code being run by JavaScript is now optimized and minified using the [Closure Compiler](https://closure-compiler.appspot.com/)
+- documentation removed from npm package to reduce size
+- minor miscellaneous changes to functions.ts
+- updated all dependencies to latest versions
 
 ## Contributing
 As an open-source project, any pull requests are welcome! If you implement the library and create any major features, please feel free to send me a message if you're unsure on how to implement them into the library. 

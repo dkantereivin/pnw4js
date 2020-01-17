@@ -1,6 +1,6 @@
 {
   "name": "pnw4js",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "A super simple npm library for interacting with Politics and War via JavaScript.",
   "main": "dist/PoliticsAndWar.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/canterbotto/pnw4js.git"
+    "url": "git+https://github.com/dkantereivin/pnw4js.git"
   },
   "keywords": [
     "pnw",
@@ -22,15 +22,15 @@
   "author": "Canter#0548",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/canterbotto/pnw4js/issues"
+    "url": "https://github.com/dkantereivin/pnw4js/issues"
   },
-  "homepage": "https://github.com/canterbotto/pnw4js#readme",
+  "homepage": "https://github.com/dkantereivin/pnw4js#readme",
   "devDependencies": {
-    "typedoc": "^0.14.2"
+    "typedoc": "^0.16.6"
   },
   "dependencies": {
-    "@types/node": "^11.13.8",
-    "axios": "^0.18.0"
+    "@types/node": "^13.1.7",
+    "axios": "^0.19.1"
   },
   "types": "dist/PoliticsAndWar.d.ts"
 }

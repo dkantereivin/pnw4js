@@ -58,8 +58,10 @@ class NationsParams // possibly redundant
 
     public constructor(vm?, min_score?, max_score?, alliance_id?) 
     {
-        this.vm = vm; this.alliance_id = alliance_id;
-        this.min_score = min_score; this.max_score = max_score; 
+        this.vm = vm; 
+        this.alliance_id = alliance_id;
+        this.min_score = min_score; 
+        this.max_score = max_score; 
     }
 }
 async function nations (this: PoliticsAndWar, params: NationsParams = null): Promise<any>

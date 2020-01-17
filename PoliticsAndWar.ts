@@ -1,6 +1,6 @@
 
 import * as raw_api from "./api.json";
-import axios from "axios";
+import axios, {AxiosResponse} from "axios";
 
 import * as Functions from "./functions";
 
@@ -100,7 +100,7 @@ class PoliticsAndWar
     public async rawApiCall(api: string, id: string = ""): Promise<any>
     {
         let url: string = this.genURL(api, id);
-        let res: any = await axios.get(url)
+        let res: AxiosResponse<any> = await axios.get(url)
             .catch(err => {
                 console.error(err);
                 return Promise.reject(err);
