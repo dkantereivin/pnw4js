@@ -64,7 +64,7 @@
     "war": {
         "type": "id",
         "name": "War",
-        "path": "https://politicsandwar.com/api/war/${[ID]}&key=${[KEY]}"
+        "path": "/war/${[ID]}&key=${[KEY]}"
     },
     "wars": {
         "type": "id",
