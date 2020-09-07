@@ -43,8 +43,8 @@ class PoliticsAndWar
      */
     public constructor(key: string, password: string = "pnw")
     {
-        this.key = key;
-        this.password = password;
+        Object.defineProperty(this, key, {value: key});
+        Object.defineProperty(this, password, {value:password, });
         
         for (let key in raw_api)
         {
