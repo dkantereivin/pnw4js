@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@types/node": "^13.1.7",
-    "axios": "^0.19.1"
+    "axios": "^0.21.1"
   },
   "types": "dist/PoliticsAndWar.d.ts"
 }
